@@ -38,6 +38,7 @@ def read_my_profile(
     return _build_profile(db, current_user, current_user)
 
 
+
 @router.put("/me", response_model=UserOut)
 def update_my_profile(
     updates: UserUpdate,

@@ -35,7 +35,7 @@ def get_current_user(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Could not validate credentials",
         )
-    user = crud_user.get(db, id=int(payload["sub"]))
+    user = crud_user.get(db, user_id=int(payload["sub"]))
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return user
