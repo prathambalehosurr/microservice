@@ -1,0 +1,82 @@
+.suggest {
+  width: 320px;
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+.suggest__me {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.suggest__me-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.suggest__me-name {
+  font-weight: 600;
+}
+.suggest__me-full {
+  color: var(--ig-text-secondary);
+}
+.suggest__switch {
+  font-size: 12px;
+}
+
+.suggest__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.suggest__head span {
+  color: var(--ig-text-secondary);
+  font-weight: 600;
+}
+.suggest__seeall {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.suggest__list {
+  display: flex;
+  flex-direction: column;
+}
+.suggest__empty {
+  color: var(--ig-text-secondary);
+  font-size: 13px;
+  padding: 8px 0;
+}
+.suggest__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+.suggest__row-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.suggest__row-name {
+  font-weight: 600;
+}
+.suggest__row-meta {
+  color: var(--ig-text-secondary);
+  font-size: 12px;
+}
+.suggest__follow {
+  font-size: 12px;
+}
+
+.suggest__footer {
+  margin-top: 20px;
+  color: #c7c7c7;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.suggest__copy {
+  margin-top: 12px;
+}

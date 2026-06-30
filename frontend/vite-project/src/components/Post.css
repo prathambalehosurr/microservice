@@ -1,0 +1,130 @@
+.post {
+  background: var(--ig-surface);
+  border: 1px solid var(--ig-border);
+  border-radius: 8px;
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.post__head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+}
+.post__author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post__username {
+  font-weight: 600;
+  font-size: 14px;
+}
+.post__dot,
+.post__time {
+  color: var(--ig-text-secondary);
+  font-size: 14px;
+}
+.post__more {
+  margin-left: auto;
+  font-size: 20px;
+  display: flex;
+  color: var(--ig-text);
+}
+
+.post__media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #efefef;
+  border-top: 1px solid var(--ig-border);
+  border-bottom: 1px solid var(--ig-border);
+}
+.post__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px 4px;
+}
+.post__actions-left {
+  display: flex;
+  gap: 14px;
+}
+.post__actions button {
+  font-size: 24px;
+  display: flex;
+  color: var(--ig-text);
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+.post__actions button:hover {
+  opacity: 0.55;
+}
+.post__actions button:active {
+  transform: scale(0.9);
+}
+.post__actions button.liked {
+  color: var(--ig-red);
+}
+
+.post__likes {
+  font-weight: 600;
+  padding: 2px 12px;
+}
+
+.post__caption {
+  padding: 2px 12px;
+  line-height: 1.5;
+}
+
+.post__comments {
+  padding: 2px 12px;
+}
+.post__comment {
+  padding: 1px 0;
+  line-height: 1.5;
+}
+.post__view-comments {
+  color: var(--ig-text-secondary);
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.post__timestamp {
+  display: block;
+  color: var(--ig-text-secondary);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  padding: 6px 12px 10px;
+}
+
+.post__error {
+  color: var(--ig-red);
+  font-size: 12px;
+  padding: 2px 12px 6px;
+}
+
+.post__add {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid var(--ig-border);
+  padding: 6px 12px;
+}
+.post__add input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 8px 0;
+}
+.post__add button {
+  font-size: 14px;
+}

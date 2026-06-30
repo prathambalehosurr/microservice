@@ -1,0 +1,109 @@
+.follow-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: followFadeIn 0.15s ease;
+}
+
+@keyframes followFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.follow-modal {
+  background: var(--ig-surface, #fff);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: followSlideUp 0.2s ease;
+}
+
+@keyframes followSlideUp {
+  from { transform: translateY(24px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.follow-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--ig-border, #dbdbdb);
+}
+
+.follow-modal__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.follow-modal__close {
+  position: absolute;
+  right: 12px;
+  font-size: 22px;
+  color: var(--ig-text, #262626);
+  padding: 4px;
+}
+
+.follow-modal__list {
+  overflow-y: auto;
+  flex: 1;
+  padding: 8px 0;
+}
+
+.follow-modal__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--ig-text, #262626);
+  transition: background 0.1s;
+}
+.follow-modal__item:hover {
+  background: var(--ig-bg, #fafafa);
+}
+
+.follow-modal__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.follow-modal__username {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.follow-modal__fullname {
+  font-size: 13px;
+  color: var(--ig-text-secondary, #8e8e8e);
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.follow-modal__empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--ig-text-secondary, #8e8e8e);
+}
+
+.follow-modal__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}

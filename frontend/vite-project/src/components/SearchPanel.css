@@ -1,0 +1,63 @@
+.search {
+  background: var(--ig-surface);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+  align-self: flex-start;
+  margin-top: 8vh;
+}
+
+.search__title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.search__box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #efefef;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.search__box input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+}
+.search__icon {
+  color: var(--ig-text-secondary);
+}
+
+.search__results {
+  margin-top: 16px;
+  min-height: 80px;
+}
+.search__hint {
+  color: var(--ig-text-secondary);
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.search__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+}
+.search__row:hover {
+  background: #f2f2f2;
+}
+.search__row span {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.search__row small {
+  color: var(--ig-text-secondary);
+}

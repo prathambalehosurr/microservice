@@ -1,0 +1,21 @@
+.layout {
+  min-height: 100vh;
+}
+
+.layout-main {
+  margin-left: var(--sidebar-width);
+  min-height: 100vh;
+}
+
+@media (max-width: 1264px) {
+  .layout-main {
+    margin-left: var(--sidebar-width-collapsed);
+  }
+}
+
+@media (max-width: 767px) {
+  .layout-main {
+    margin-left: 0;
+    padding-bottom: 50px; /* room for bottom tab bar */
+  }
+}

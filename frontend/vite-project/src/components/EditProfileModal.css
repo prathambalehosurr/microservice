@@ -1,0 +1,92 @@
+.edit {
+  background: var(--ig-surface);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 440px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.edit__title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.edit__avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fafafa;
+  border-radius: 12px;
+  padding: 16px;
+}
+.edit__avatar-wrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+.edit__avatar-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+.edit__avatar-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.edit__avatar-info strong {
+  font-size: 16px;
+}
+.edit__avatar-info button {
+  font-size: 14px;
+  text-align: left;
+}
+
+.edit__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.edit__field span {
+  font-weight: 600;
+}
+.edit__field input,
+.edit__field textarea {
+  border: 1px solid var(--ig-border);
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  resize: none;
+}
+.edit__field textarea {
+  min-height: 80px;
+}
+.edit__field input:focus,
+.edit__field textarea:focus {
+  border-color: #a8a8a8;
+}
+
+.edit__error {
+  color: var(--ig-red);
+  font-size: 13px;
+  text-align: center;
+}
+
+.edit__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.edit__actions .btn-primary {
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
